@@ -1,0 +1,46 @@
+.MainPage{
+    background-color: #012E40;
+    height: 300vh;   
+    padding-top: 8%;    
+}
+
+.MainPageContent{
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 200vh;
+}
+
+.GridContent{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.ProfileImage{
+    vertical-align: middle;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -100px;
+    margin-left: calc(50% - 120px);
+}
+
+@media only screen and (max-width: 1480px){
+    .ProfileImage{
+        vertical-align: middle;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: -90px;
+        margin-left: calc(50% - 90px);
+    }
+
+    .MainPage{
+        height: 300vh;   
+        padding-top: 20%;    
+    }
+}

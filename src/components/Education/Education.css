@@ -1,0 +1,66 @@
+.Education{
+    background-color: rgba(236, 236, 236, 0.52);
+    height: 200px;
+    margin-left: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.IMT{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.EducationContent{
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+.EducationInstituteName{
+    font-size: 15pt;
+    font-weight: 600;   
+}
+
+.EducationTitle{
+    font-size: 13pt;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.EducationYear{
+    font-size: 13pt;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+.IMTLogo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1300px){
+    .Education{
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .IMT{
+        display: flex;
+        flex-wrap: initial;
+    }
+
+    .IMTLogo{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

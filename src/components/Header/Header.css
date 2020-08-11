@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,600;1,700&display=swap");
+
+.Header{
+  position: relative;
+  height: 290px;
+  background-color: #012E40;
+  padding-top: 150px;
+}
+
+.Line{
+  font: 0.9em/1.6 'Inconsolata', monospace;
+  font-weight: 400;
+  color: #ABBF0F;
+  margin-left: calc(50% - 160px);
+}
+
+.Typewriter1 h2 {
+  color: #ABBF0F;
+  font: 0.9em/1.6 'Inconsolata', monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.UnderLine{
+  position: relative;
+  color: #ABBF0F;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+
+@media only screen and (max-width: 800px){
+  .Line{
+    margin-left: 5%
+  }
+}
