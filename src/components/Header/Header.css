@@ -53,4 +53,12 @@
   .Line{
     margin-left: 5%
   }
+
+  .Header{
+    height: 180px;  
+  }
+
+  .Typewriter1 h2 {
+    font: 0.8em/1.6 'Inconsolata', monospace;
+  }
 }
