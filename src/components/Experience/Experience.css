@@ -9,7 +9,7 @@
     border-radius: 10px;
 }
 
-.Itau{
+.ExperienceCard{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -37,7 +37,7 @@
     margin-top: -10px;
 }
 
-.ItauLogo{
+.ExperienceLogo{
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -53,12 +53,12 @@
         width: 100%;
     }
 
-    .Itau{
+    .ExperienceCard{
         display: flex;
         flex-wrap: initial;
     }
 
-    .ItauLogo{
+    .ExperienceLogo{
         height: 50px;
         width: 50px;
         border-radius: 50%;
