@@ -1,9 +1,9 @@
 import React from 'react';
 import './Languages.css';
 
-export default function Languages(){
+export default function Languages(props){
     return(
-        <div className="Languages">
+        <div className={props.class}>
             <h2>Languages</h2>
             <div className="LanguagesArea">            
                 <p>Portuguese</p>

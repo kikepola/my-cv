@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import './MainPage.css';
 import Header from '../components/Header/Header';
 import Profile from '../components/Profile/Profile';
@@ -15,8 +15,25 @@ import DataBaseSkill from './../components/DataBaseSkill/DataBaseSkill';
 import MobileSkills from './../components/MobileSkills/MobileSkills';
 import DesignSkills from './../components/DesignSkills/DesignSkills';
 import OtherSkills from './../components/OtherSkills/OtherSkills';
+import Projects from './../components/Projects/Projects';
 
 export default function MainPage(){
+    const [width, height] = useWindowSize();
+
+    function useWindowSize() {
+        const [size, setSize] = useState([0, 0]);
+        useLayoutEffect(() => {
+          function updateSize() {
+            setSize([window.innerWidth, window.innerHeight]);
+          }
+          window.addEventListener('resize', updateSize);
+          updateSize();
+          return () => window.removeEventListener('resize', updateSize);
+        }, []);
+
+        return size;
+      }
+
     return(
         <div>
             <Header />
@@ -27,8 +44,11 @@ export default function MainPage(){
                     <div className="GridContent">
                         <Education />
                         <Experience />
-                        <Certifications />
-                        <Languages />
+                        <Certifications />  
+                        {width > 1300
+                        ? <div className="Divider"> <Languages class="LanguagesGrid"/> <Projects class="ProjectsGrid"/> </div>
+                        : <Languages class="Languages"/> }     
+                        {width <= 1300 ? <Projects class="Projects"/> :<div></div>}      
                     </div>  
                     <div className="TechSkills">                   
                         <h2>Technology Skills</h2>

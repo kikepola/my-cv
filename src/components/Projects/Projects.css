@@ -1,4 +1,4 @@
-.Languages{
+.Projects{
     background-color: rgba(236, 236, 236, 0.52);
     height: 100%;
     width: 40%;
@@ -11,11 +11,10 @@
     border-radius: 10px;
 }
 
-.LanguagesGrid{
+.ProjectsGrid{
     background-color: rgba(236, 236, 236, 0.52);
-    
-    height: 55%;
     width: 80%;
+    height: 85%;
     
     margin-top: 5%;
     margin-left: 10%;
@@ -29,18 +28,21 @@
     border-radius: 10px;
 }
 
-.LanguagesArea{
-    width: 100%;
-    margin: 0 auto;
+.ProjectLogo{
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 5%;
 }
 
-.LanguagesArea > p{
-    color: rgba(44, 44, 44, 0.8);
-    font-weight: bold;
+.Projects p{
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.6;
 }
+
   
 @media only screen and (max-width: 1300px){
-    .Languages{
+    .Projects{
         margin-right: 5%;
         margin-left: 5%;
         margin-top: 5%;
