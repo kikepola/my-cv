@@ -17,6 +17,8 @@
     display: inline-flex;
     flex-wrap: wrap;
     gap: 12px;
+
+    margin-top: 5%;
 }
 
 .Divider{
